@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/imagenes/logoPizza.jpg">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>PizzaDash</title>
+</head>
+<body>
+    <!-- Este es el contenido -->
+    <div class="container">
+        <!-- Esta es la navegacion derecha -->
+        <nav class="nav-left">
+            <div class="nav-left-cont-logo">
+                <a class="nav-left-a-logo" href="/">
+                    <img class="nav-left-img-logo" src="../static/imagenes/logoPizza.jpg" width="200px" alt="">
+                </a>
+            </div>
+            <ul class="nav-left-ul">
+                <li class="nav-left-li active">
+                    <a class="nav-left-a" href="/">HOME</a>
+                </li>
+                <li class="nav-left-li">
+                    <a class="nav-left-a" href="/pizzas">PIZZAS</a>
+                </li>
+                <li class="nav-left-li">
+                    <a class="nav-left-a" href="/orders">ORDERS</a>
+                </li>
+                <li class="nav-left-li">
+                    <a class="nav-left-a" href="/stores">STORES</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Esta es la navegacion -->
+        <div class="content-nav-main">
+            <nav class="navegation">
+                <a class="nav-title" href="/">WELCOME TO <span class="nav-title-span">PIZZA DASH</span></a>
+                <ul class="nav-ul">
+                    <li class="nav-li"><a class="nav-li-a" href="/register">Register</a></li>
+                    <span class="line-nav-li"></span>
+                    <li class="nav-li"><a class="nav-li-a" href="/login">Login</a></li>
+                    <li class="nav-li"><a class="nav-li-a" id="userID">{{usuario}}</a></li>
+                </ul>
+            </nav>
+            <!-- Esta es la descripcion -->
+            <header class="cont-header">
+                <img class="header-img" src="../static/imagenes/headerPizza.jpg" alt="">
+                <div class="flex-cont-header-absolute">
+                    <h1 class="header-description-title"><span class="header-desc-title-span">BEST PIZZA</span> IN THE WORLD</h1>
+                    <p class="header-description-txt">¡Bienvenido a PizzaDash! Tu destino para disfrutar de auténticas pizzas en la comodidad de tu hogar. Ofrecemos entrega rápida y confiable de pizzas frescas y deliciosas. ¡Ordénanos ahora y satisface tus antojos de pizza con calidad y conveniencia!</p>
+                    <div><button class="header-description-btn">GET STARTED</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const user = document.getElementById("userID");
+        const token = document.cookie = user.textContent;
+        user.textContent = document.cookie;
+    </script>
+</body>
+</html>

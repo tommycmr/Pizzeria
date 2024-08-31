@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #25262F;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* CONTAINER */
+
+.container{
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Navegation */
+
+.navegation{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: #25262F;
+    border-bottom: 1px solid #000;
+}
+.nav-title{
+    margin-left: 20px;
+}
+.nav-title-span{
+    color: #FBE6CE;
+}
+.nav-ul{
+    display: flex;
+    align-items: center;
+    background-color: #F64D4C;
+    padding: 3px 50px;
+    gap: 10px;
+}
+
+.line-nav-li{
+    display: flex;
+    width: 1px;
+    height: 10px;
+    background-color: #1E1E1E;
+}
+
+.nav-li-a{
+    color: #1E1E1E;
+    font-weight: 600;
+}
+
+/* Nav LEFT */
+
+.nav-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
+    padding: 10px 30px;
+    background-color: #25262F;
+    border-right: 1px solid #000;
+}
+.nav-left-img-logo{
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.nav-left-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nav-left-a{
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.active{
+    border-bottom: 3px solid #F64D4C;
+}
+
+/* MAIN */
+
+.content-nav-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.cont-header{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+.header-img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    rotate: -180deg;
+    opacity: 50%;
+}
+.flex-cont-header-absolute{
+    position: absolute;
+    width: 100%;
+    max-width: 610px;
+    margin-left: 50px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.header-desc-title-span{
+    color: #F64D4C;
+    font-weight: 500;
+    font-family: "Lilita One", sans-serif;
+}
+.header-description-title{
+    font-size: 96px;
+    font-weight: 500;
+    font-family: "Lilita One", sans-serif;
+}
+.header-description-btn{
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #F64D4C;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* LOGIN AND REGISTER */
+
+.content-sign{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+}
+.cont-sign-wallpaper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.cont-sign-wallpaper img{
+    width: 100%;
+    height: 100%;
+}
+.flex-cont-form{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    background-color: #25262F;
+}
+.sign-form{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    padding: 20px 30px;
+}
+.sign-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 34px;
+}
+.inputstl{
+    display: flex;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #F64D4C;
+    color: #fff;
+    border-radius: 10px;
+}
+.inputstl::placeholder{
+    color: #fff;
+}
+.sign-btn{
+    display: flex;
+    padding: 10px;
+    color: #1E1E1E;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    border:none;
+}
+
+/* PIZZAS */
+
+.ar-pr-input{
+    color: #000;
+    padding: 7px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.ar-pr-btn{
+    padding: 7px;
+    background: #F64D4C;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
